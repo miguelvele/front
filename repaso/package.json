@@ -1,0 +1,36 @@
+{
+  "name": "repaso",
+  "version": "1.0.0",
+  "description": "Repaso de JS con git ",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "set NODE_ENV=developer& nodemon app/index.js --exec babel-node",
+    "qa": "set NODE_ENV=qa& nodemon app/index.js --exec babel-node",
+    "start": "set NODE_ENV=production& nodemon app/index.js --exec babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deposada74/repaso.git"
+  },
+  "author": "ARCAN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deposada74/repaso/issues"
+  },
+  "homepage": "https://github.com/deposada74/repaso#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^3.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "nodemon": "^2.0.21"
+  }
+}
